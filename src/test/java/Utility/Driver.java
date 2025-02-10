@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Driver {
 
-    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
 
     public static synchronized WebDriver getDriver() {
@@ -41,4 +41,3 @@ public class Driver {
 
 
     }
-}
