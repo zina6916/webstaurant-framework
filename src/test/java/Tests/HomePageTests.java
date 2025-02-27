@@ -10,6 +10,8 @@ import java.util.Objects;
 
 public class HomePageTests extends TestBase{
 
+
+
     @Test
     public void clickOnFeaturedElements(){
         Driver.getDriver().get(ConfigReader.getProperty("url"));

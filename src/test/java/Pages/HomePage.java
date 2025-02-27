@@ -27,5 +27,6 @@ public class HomePage {
           System.out.println("Element is not visible");
       }
   }
-
+@FindBy(id ="searchval")
+    private WebElement searchField;
 }
