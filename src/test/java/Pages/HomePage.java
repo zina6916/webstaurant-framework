@@ -2,6 +2,7 @@ package Pages;
 
 import Utility.Driver;
 import lombok.Data;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -13,6 +14,9 @@ public class HomePage {
     public  HomePage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
+
+    @FindBy(id ="searchval")
+    private WebElement searchField;
 
     @FindBy(xpath ="//p[@class='text-sm leading-none text-gray-900 group-hover:text-green-500 group-hover:underline mb-0 p-1 transition-all duration-75 ease-in-out mt-2 lt:mt-5' and text()='Restaurant Equipment']")
     private WebElement restaurantEquipment;
@@ -27,6 +31,13 @@ public class HomePage {
           System.out.println("Element is not visible");
       }
   }
-@FindBy(id ="searchval")
-    private WebElement searchField;
+
+
+
+
+
+
+
+
 }
+
